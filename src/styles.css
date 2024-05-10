@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+hr{
+    height: 10px;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(199, 31, 31), rgb(249, 98, 93), rgb(60, 107, 235), rgba(14, 7, 205, 0.93));
+    color: white;
+}

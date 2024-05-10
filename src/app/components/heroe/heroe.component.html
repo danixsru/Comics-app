@@ -1,0 +1,25 @@
+<h1 class="animate__animated animate__lightSpeedInLeft">{{heroe.nombre}} <small>{{heroe.aparicion}}</small></h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <br><br>
+        <a [routerLink]="['/heroes']" class="btn btn-light btn-block">Regresar</a>
+    </div>
+    <div class="col-md-8">
+        <h3 class="animate__animated animate__zoomIn" >{{heroe.nombre}}</h3>
+        <hr>
+        <p class="lead">
+            {{heroe.bio}}
+        </p>
+    </div>
+        <div style="text-align: center;">
+            <img [src]="heroe.img" alt="">
+            <br><br><br>
+            <div *ngIf="heroe.casa == 'DC'" style="text-align: center;" >
+                <img src= "assets/img/DC.png" alt="" width=1000px height="500px">
+            </div>
+            <div *ngIf="heroe.casa == 'Marvel'">
+                <img src= "assets/img/marvel.png" alt="" width=1000px height="500px">
+            </div>
+        </div>
+</div>
